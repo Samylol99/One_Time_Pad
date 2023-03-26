@@ -196,10 +196,12 @@ public class MainActivity extends Activity {
     }
 
     public void _GetCharacter() {
-        if (" @#\\€%_*&\"-'+:(;)!/?,.~£¥`≤≥$|•¢≠©^√π°®™=÷×{[]}¶∆±✓åäàâãāæáêéèëėęēÿùûüũúūîïìįíĩīœöôòºøóõōößçčćñ".contains(this.Textmemory.substring(0, 1))) {
-            this.CharaOld = -37.0d;
-        } else {
+        if ("abcdefghijklmnopqrstuvwxyz0123456789".contains(this.Textmemory.substring(0, 1))) {
             this.CharaOld = (double) ("abcdefghijklmnopqrstuvwxyz0123456789".indexOf(this.Textmemory.substring(0, 1)) + 1);
+
+        } else {
+
+            this.CharaOld = -37.0d;
         }
     }
 
