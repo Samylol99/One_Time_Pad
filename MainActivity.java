@@ -206,7 +206,7 @@ public class MainActivity extends Activity {
     }
 
     public void _ShifCharacter() {
-        if (this.CharaNew < 0.0d) {
+        if (this.CharaNew < 1.0d) {
             this.Crypted = this.Crypted.concat("?");
         } else {
             this.Crypted = this.Crypted.concat("abcdefghijklmnopqrstuvwxyz0123456789".substring((int) (this.CharaNew - 1.0d), (int) this.CharaNew));
